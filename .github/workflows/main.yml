@@ -12,3 +12,8 @@ jobs:
     steps: # Indentation corrected
       - name: Print a welcome message # Start of a step (list item with '- ')
         run: echo "Welcome to our first github Actions Workflow!" # 'run' command with correct indentation and syntax
+      - name: Checkout reository 
+        uses: actions/checkout@v5.0.0
+
+      - name: List repository files
+        run: ls -la
