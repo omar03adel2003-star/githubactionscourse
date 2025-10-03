@@ -1,0 +1,14 @@
+name: First Workflow
+
+on:
+  push:
+    branches:
+      - main  # Indentation corrected and 'main' should be a list item
+
+jobs:
+  example-job: # Indentation corrected
+    runs-on: ubuntu-latest # Indentation corrected. Use lowercase for standard runners.
+
+    steps: # Indentation corrected
+      - name: Print a welcome message # Start of a step (list item with '- ')
+        run: echo "Welcome to our first github Actions Workflow!" # 'run' command with correct indentation and syntax
