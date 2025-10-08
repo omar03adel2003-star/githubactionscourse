@@ -11,12 +11,14 @@ on:
       - "release/**"
 
 jobs:
-  test: # انتبه جيداً لهذا السطر! يجب أن يكون 'test'
+  test: # تأكد أن اسم الـ Job هو 'test'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code 
         uses: actions/checkout@v4
       - name: Install dependencies
-        run: npm install 
+        run: npm install
       - name: Run tests
         run: npm test
+
+        #god hlep me
